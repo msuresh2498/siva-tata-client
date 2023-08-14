@@ -23,16 +23,17 @@ function App() {
       <AppBar className='Appbar' position="static">
         <Toolbar className='nav-tools'>
 
-          <Button color="inherit">TATA</Button>
-          <Button color="inherit">Contact Us</Button>
+          <Button color="inherit" onClick={()=> navigate('/')}>TATA</Button>
+         
           <Button
                 sx={{
                   marginLeft: "auto",
                 }}
                 startIcon={mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
                 color="inherit" onClick={() => setMode(mode === "light" ? "dark" : "light")}>
-                {mode === "light" ? "dark" : "light"} mode
+               
               </Button>
+              <Button color="inherit" href='#contact'>Contact Us</Button>
         </Toolbar>
       </AppBar>
 

@@ -45,7 +45,7 @@ const Home = () => {
           <div>
             <img src='https://i.pinimg.com/originals/0b/c1/94/0bc19452b7a568797c8331be7275e453.png' alt='offers' className='offer-img' />
           </div>
-          <Button variant="contained" className='drive-btn'><DriveEtaIcon />book a test drive</Button>
+          <Button variant="contained" href='#contact' className='drive-btn'><DriveEtaIcon />book a test drive</Button>
         </div>
         <div>
           <h3 className='spec-head'>TATA INTRA V30 and V50 SPECIFICATION</h3>
@@ -109,7 +109,7 @@ const Home = () => {
               loading="lazy"
               className='map-frame'></iframe>
           </div>
-          <div className='contact-container'>
+          <div className='contact-container' id='contact'>
             {alert ? <Alert severity="success" className='reset-msg'>successfully sent the message; he will contact you shortly.</Alert> : null}
 
             <form className='contact-form'>
